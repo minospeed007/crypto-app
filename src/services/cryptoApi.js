@@ -1,5 +1,5 @@
 import {createApi , fetchBaseQuery} from '@reduxjs/toolkit/query/react'
-
+import axios from 'axios'
 const baseUrl='https://coinranking1.p.rapidapi.com/coins'
 
 const cryptoApiHeaders={
@@ -59,7 +59,7 @@ export const getProperty= async ()=>{
           }
         })
         return data 
-    }catch(errror){
+    }catch(error){
         console.log(error)
     }
-}https://coinranking1.p.rapidapi.com/coins%20
+}
